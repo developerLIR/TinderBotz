@@ -1,9 +1,14 @@
 '''
 Created by Frederikme (TeetiFM)
 '''
+import os
+import sys
 
-from tinderbotz.session import Session
-from tinderbotz.helpers.constants_helper import *
+file_dir = os.path.dirname(__file__)
+sys.path.append(file_dir)
+
+from .tinderbotz.session import Session
+from .tinderbotz.helpers.constants_helper import *
 
 if __name__ == "__main__":
     # creates instance of session
